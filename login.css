@@ -1,0 +1,99 @@
+.signup-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+    background-image:url(hotel.jpeg);
+    background-image: contain;
+    margin:0px;
+    padding:0px;
+    background-size: 100%100%;
+    background-attachment: fixed;
+}
+
+.signup-content {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #AAD15F;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and Paragraph Styling */
+.signup-content h2 {
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    color: #3f2933;
+    margin-bottom: 20px;
+}
+
+.signup-content p {
+    font-size: 16px;
+    color: #21233a;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+/* Submit Button Styling */
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+button a{
+   text-decoration: none;
+   color: white;
+}
+
+form button:active {
+    background-color: #00408c;
+}
+.anchor
+{
+    margin-left: 180px;
+    position: relative;
+    bottom: 23px;
+}

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    color: #000000;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 5px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: orange;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.menu-section ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-section ul li div {
+    flex-grow: 1;
+}
+
+.menu-section ul li h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.menu-section ul li p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.menu-section ul li span {
+    font-weight: bold;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.order {
+    text-decoration: none;
+}

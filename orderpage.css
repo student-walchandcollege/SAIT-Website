@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f6f4;
+    padding: 20px;
+    background-image: url(fooddelivery.jpg);
+    background-image: contain;
+  }
+  body{
+    background-image:url("order_.jpg");
+    background-position:right;
+    background-size:cover;
+    background-image: url(fooddelivery.jpg);
+    /* background-image: contain; */
+}
+label{
+  color:red;
+  word-wrap:break-word;
+}
+
+
+  
+  .order-container {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(109, 173, 20, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #5316ac;
+  }
+  
+  fieldset {
+    border:none;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 41%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+.buttonOrder{
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  border-radius: 1px;
+}
+  .buttonOrder a{
+    font-size: 16px;
+    color: white;
+  background-color: green;
+  text-decoration: none;
+  }

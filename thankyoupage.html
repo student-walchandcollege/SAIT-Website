@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You with Rating</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+      color: #fff;
+      text-align: center;
+      background-image: url(thankyou.jpeg);
+      
+    }
+
+    .thank-you-container {
+      background-color: #292b4d;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thank-you-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .rating-container {
+      margin: 20px 0;
+    }
+
+    .star {
+      font-size: 2rem;
+      color: #666;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .star:hover,
+    .star.selected {
+      color: #ffdd57;
+      transform: scale(1.2);
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #292b4d;
+      background: #ffd700;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffae42;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <h1>Thanks for your order...!</h1>
+    <p>We appreciate your choice and would love your feedback.</p>
+    
+    <div class="rating-container">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+
+    <button class="btn" onclick="submitRating()">Submit Rating</button>
+  </div>
+
+  <script>
+    
+    const stars = document.querySelectorAll('.star');
+    let selectedRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+       
+        stars.forEach(s => s.classList.remove('selected'));
+
+       
+        selectedRating = star.getAttribute('data-value');
+        for (let i = 0; i < selectedRating; i++) {
+          stars[i].classList.add('selected');
+        }
+      });
+    });
+
+    function submitRating() {
+      if (selectedRating > 0) {
+        alert(Thank you for rating us ${selectedRating} stars!);
+      } else {
+        alert('Please select a rating before submitting.');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Information</title>
+  <link rel="stylesheet" href="orderpage.css">
+</head>
+<body>
+  
+    <h1>Enter Your Information</h1>
+    <style>h1{
+      color:purple;
+    }</style>
+
+    <!-- Customer Information Form -->
+    <form action="submit_customer_info.php" method="POST">
+      
+      <!-- Customer Information -->
+      <fieldset>
+        <h3>Customer Information</h3> 
+        <label for="Mobile no.">Mobile No.</label>
+        <input type="number" id="Mobile Number" name="Mobile no." required><br><br>
+        
+        <label for="Adress">Adress</label>
+        <input type="text" id="name" name="Adress" required><br><br>
+
+        <label for="land mark">landmark</label>
+        <input type="landmark" id="landmark" name="landmark" required><br><br>
+        <h3>Payment</h3>
+        <style>h3{
+          color:green;
+        }</style>
+        <label for="id1">
+            <input type="radio"value="Cash on Delivery"name="class"id="id1">Cash on Delivery
+        </label><br>
+        <label for="id2">
+            <input type="radio"value="Online"name="class"id="id2">online
+        </label>
+
+       
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button class="buttonOrder"><a href="thankyoupage.html">Place Your Order</a></button>
+      
+    </form>
+  
+</body>
+</html>
